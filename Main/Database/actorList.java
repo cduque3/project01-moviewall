@@ -1,3 +1,6 @@
+package Database;
+import Functions.*;
+
 import java.util.ArrayList;
 
 /** 
@@ -66,12 +69,7 @@ public class actorList {
         }
     }
 
-    /**  
-     * Insert an actor into the list alphabetically
-     * @param String: new actor to add to the list
-     * @return 
-    */
-    public void insertActors(String newActor) {
+    private void insertActors(String newActor) {
 
         // Index in the list to insert the new actor
         int insert = Math.abs(searching.binarySearch(actorNames, newActor));

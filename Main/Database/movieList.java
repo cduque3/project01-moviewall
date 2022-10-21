@@ -1,3 +1,4 @@
+package Database;
 import java.util.*;
 
 /** 
@@ -5,7 +6,7 @@ import java.util.*;
 */
 public class movieList {
 
-        public ArrayList <Movie> movies = new ArrayList<Movie>();
+        protected ArrayList <Movie> movies = new ArrayList<Movie>();
 
         /**  
          * Add a movie to the movie list
@@ -20,7 +21,7 @@ public class movieList {
          * Get the size of the movie list
          * @return size of movie list
         */
-        public int getLength() {
+        protected int getLength() {
             return movies.size();
         }
     }

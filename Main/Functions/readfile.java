@@ -1,9 +1,10 @@
+package Functions;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 
-import Database.Movie;
-import Database.movieList;
+import Database.*;
 
 /** 
  * Class with methods to read CSV file and put it's info into a movie list
@@ -73,7 +74,7 @@ public class readfile {
      * @param String: JSON string
      * @return list with movie characters
     */
-    public static ArrayList<String> extractCharacters(String line) {
+    private static ArrayList<String> extractCharacters(String line) {
 
         // ArrayList to hold the movie's characters
         ArrayList<String> characterList = new ArrayList<String>();
@@ -120,7 +121,7 @@ public class readfile {
      * @param String: JSON string
      * @return list of cast members
     */ 
-    public static ArrayList<String> extractCast(String line) {
+    private static ArrayList<String> extractCast(String line) {
 
         // ArrayList to hold the movie's cast members
         ArrayList<String> nameList = new ArrayList<String>();

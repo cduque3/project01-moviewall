@@ -1,3 +1,6 @@
+import Database.*;
+import Functions.*;
+
 import java.util.*;
 
 public class project01 {
@@ -5,12 +8,10 @@ public class project01 {
     public static void main(String[] args) {
 
         // Pass in the file and put all the movies into a list
-        String file = "tmdb_5000_credits.csv";
+        String file = args[1];
         movieList movieList = new movieList();
 
-        //readfile.readThroughBufferReader(file, movieList);
         readfile.readThroughBufferReader(file, movieList);
-
 
         // Putting all actors in the movie list into a new list of actors
         actorList actorList = new actorList();

@@ -1,4 +1,7 @@
+package Functions;
+
 import java.util.*;
+
 
 /** 
  * Class with method to binary search the actor list

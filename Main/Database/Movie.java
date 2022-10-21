@@ -1,3 +1,4 @@
+package Database;
 import java.util.*;
 
 /** 
@@ -39,7 +40,7 @@ public class Movie {
          * Get the size of the movie's cast
          * @return movie's cast size
         */
-        public int getCastSize() {
+        protected int getCastSize() {
             return cast.size();
         }
 

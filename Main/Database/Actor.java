@@ -15,7 +15,7 @@ public class Actor {
      * @param String: actor's name
      * @return 
     */
-    public void setName(String newName) {
+    protected void setName(String newName) {
         name = newName;
     }
 
@@ -24,7 +24,7 @@ public class Actor {
      * @param String: actor's movie
      * @return 
     */
-    public void addMovie(String newMovie) {
+    protected void addMovie(String newMovie) {
         movies.add(newMovie);
     }
 
@@ -33,7 +33,7 @@ public class Actor {
      * @param String: actor's movie
      * @return 
     */
-    public void addRole(String newRole) {
+    protected void addRole(String newRole) {
         roles.add(newRole);
     }
 
